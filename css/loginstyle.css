@@ -1,0 +1,16 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    color: rgb(132, 0, 255);
+    text-align: center;
+    margin-left: 600px;
+    margin-right: 600px;
+    border: 3.5px solid black;
+}
+.username{
+    margin-left: 100px;
+}
+.Password{
+}
