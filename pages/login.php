@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="../css/loginstyle.css">
 </head>
 
-<body>
+<body class="body">
     <h1>Login</h1>
-    <form action="">
-        <label for="" class="Username">Username</label>
-        <input type="text" id="username" class="Username" name="username">
-        <label for="">Password</label>
-        <input type="Password" id="Password" class="Password" name="Password">
-        <button type="submit">Submit</button>
+    <form action="POST" class="port"> 
+        <div class="loginborder">
+            <label for="usernames" class="Username">Username</label>
+            <input type="text" id="usernames" class="username" name="usernames">
+            <label for="password" class="password">Password</label>
+            <input type="Password" id="Password" class="Password" name="Password">
+            <button type="submit" class="submit">Submit</button>
+        </div>
     </form>
 </body>
 
