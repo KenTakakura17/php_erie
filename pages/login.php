@@ -9,9 +9,9 @@
 </head>
 
 <body class="body">
-    <h1>Login</h1>
-    <form action="POST" class="port"> 
+    <form action="functions/loginfunction.php" method="POST" class="port">
         <div class="loginborder">
+            <h1 class="login">Login</h1>
             <label for="usernames" class="Username">Username</label>
             <input type="text" id="usernames" class="username" name="usernames">
             <label for="password" class="password">Password</label>

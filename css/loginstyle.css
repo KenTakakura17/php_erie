@@ -1,16 +1,16 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
-h1 {
-    color: rgb(132, 0, 255);
+.login{
+    color: black;
+    position: absolute;
+    top: 100px;
+    left: 740px;
     text-align: center;
-    margin-left: 600px;
-    margin-right: 600px;
-    border: 3.5px solid black;
     border-radius: 30px;
-    background-image: url(https://tse1.mm.bing.net/th/id/OIP.Ym7DuBLU0HQwAA8MzL2xAgHaEJ?pid=Api&P=0&h=180);
 }
 
 .body {
@@ -22,14 +22,14 @@ h1 {
 
 .username {
     position: absolute;
-    top: 150px;
+    top: 200px;
     left: 749px;
     border-radius: 10px;
 }
 
 .Username {
     position: absolute;
-    top: 150px;
+    top: 200px;
     left: 663px;
     background-color: white;
     padding: 1px;
@@ -38,7 +38,7 @@ h1 {
 
 .password {
     position: absolute;
-    top: 240px;
+    top: 300px;
     left: 663px;
     background-color: white;
     padding: 1px;
@@ -47,14 +47,14 @@ h1 {
 
 .Password {
     position: absolute;
-    top: 240px;
+    top: 300px;
     left: 749px;
     border-radius: 10px;
 }
 
 .submit {
     position: absolute;
-    top: 330px;
+    top: 350px;
     left: 700px;
     padding-left: 67px;
     padding-right: 67px;
@@ -64,20 +64,22 @@ h1 {
 }
 
 .loginborder {
-    margin: 0;
+    margin-top: 50px;
     padding: 0;
     padding: 190px;
     border: 3.5px solid black;
-    margin-left: 599px;
+    margin-left: 600px;
     margin-right: 671px;
     border-radius: 30px;
-    background-image: url(https://tse1.mm.bing.net/th/id/OIP.Ym7DuBLU0HQwAA8MzL2xAgHaEJ?pid=Api&P=0&h=180);
+    background-color: white;
 }
 
 .port {
+    position: absolute;
+    top: 0px;
     min-height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-image: url(https://i.pinimg.com/736x/e8/29/f5/e829f502a077d60f19c199dd35b8549c.jpg);
+    background-image: url(https://www.makoweruk.com/wp-content/uploads/2023/10/2000_Y05-1.jpg);
 }
