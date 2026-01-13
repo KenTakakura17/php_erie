@@ -1,0 +1,78 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+.mwep {
+    background-color: rgb(162, 0, 255);
+    border: 3px solid black;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.portname {
+    margin-left: 60px;
+}
+
+.dashboard {
+    position: absolute;
+    top: 100px;
+    margin-left: 900px;
+    font-size: 25px;
+}
+
+.dashboard {
+    position: absolute;
+    top: 70px;
+    margin-left: 700px;
+}
+
+.create {
+    position: absolute;
+    top: 70px;
+    margin-left: 850px;
+    font-size: 25px;
+}
+
+.retrieve {
+    position: absolute;
+    top: 70px;
+    margin-left: 1000px;
+    font-size: 25px;
+}
+
+.update {
+    position: absolute;
+    top: 70px;
+    margin-left: 1170px;
+    font-size: 25px;
+}
+
+.delete {
+    position: absolute;
+    top: 70px;
+    margin-left: 1330px;
+    font-size: 25px;
+}
+
+.dashboard:hover {
+    color: white;
+}
+
+.create:hover {
+    
+}
+
+.retrieve:hover {
+    
+}
+
+.update:hover {
+   
+}
+
+.delete:hover {
+    
+}
