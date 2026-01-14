@@ -61,18 +61,8 @@
     color: white;
 }
 
-.create:hover {
-    
-}
-
-.retrieve:hover {
-    
-}
-
-.update:hover {
-   
-}
-
-.delete:hover {
-    
+table,
+th,
+td {
+    border: rgb(28, 39, 30) solid 1px;
 }

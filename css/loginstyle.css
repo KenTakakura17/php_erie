@@ -1,20 +1,13 @@
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    box-sizing: border-box;
     overflow-x: hidden;
 }
 
 
-.port {
-    position: absolute;
-    top: 0px;
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+.body {
     background-image: url(https://www.makoweruk.com/wp-content/uploads/2023/10/2000_Y05-1.jpg);
 }
 
-.c{
-    
+.username{
 }
+

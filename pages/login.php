@@ -16,10 +16,10 @@
 </head>
 
 <body class="body">
-    <form action="functions/loginfunction.php" method="POST" class="port">
+    <form action="functions/loginfunction.php" method="POST">
         <div class="loginborder">
             <h1 class="login">Login</h1>
-            <label for="usernames" class="Username">Username</label>
+            <label for="usernames" class="username">Username</label>
             <input type="text" id="usernames" class="username" name="usernames">
             <label for="password" class="password">Password</label>
             <input type="Password" id="Password" class="Password" name="Password">
