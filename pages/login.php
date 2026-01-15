@@ -1,6 +1,6 @@
 <?php
-    if (isset($_GET['status']) && $_GET['status'] == "false") {
-        echo "<script> alert('Username and Password is incorrect') </script>";
+if (isset($_GET['status']) && $_GET['status'] == "false") {
+    echo "<script> alert('Username and Password is incorrect') </script>";
 }
 
 ?>
@@ -17,14 +17,12 @@
 
 <body class="body">
     <form action="functions/loginfunction.php" method="POST">
-        <div class="loginborder">
-            <h1 class="login">Login</h1>
-            <label for="usernames" class="username">Username</label>
+        <h1 class="login">Login</h1>
+            <label for="usernames" class="Username">Username</label>
             <input type="text" id="usernames" class="username" name="usernames">
-            <label for="password" class="password">Password</label>
-            <input type="Password" id="Password" class="Password" name="Password">
+            <label for="password" class="Password">Password</label>
+            <input type="Password" id="password" class="password" name="password">
             <button type="submit" class="submit">Submit</button>
-        </div>
     </form>
 </body>
 

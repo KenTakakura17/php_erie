@@ -1,9 +1,9 @@
 <?php
 
-if (isset($_POST['usernames']) && isset($_POST['Password'])) {
+if (isset($_POST['usernames']) && isset($_POST['password'])) {
 
     $usernames = $_POST['usernames'];
-    $Password = $_POST['Password'];
+    $Password = $_POST['password'];
 
     $my_user = "tung tung sahur";
     $my_pass = "67";
