@@ -23,6 +23,7 @@ if (isset($_POST['prod_name']) && isset($_POST['prod_quantity']) && isset($_POST
     $stmnt->execute([
         "prod_name" => $prod_name,
         "prod_quantity" => $prod_quantity,
+        
         "prod_type" => $prod_type,
         "prod_price" => $prod_price,
         "prod_date_added" => $prod_date_added
