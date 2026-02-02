@@ -21,7 +21,7 @@ if (isset($_GET['status']) && $_GET['status'] == "false") {
             <label for="usernames" class="Username">Username</label>
             <input type="text" id="usernames" class="username" name="usernames">
             <label for="password" class="Password">Password</label>
-            <input type="Password" id="password" class="password" name="password">
+            <input type="Password" id="password" class="Matik" name="password">
             <button type="submit" class="submit">Submit</button>
     </form>
 </body>

@@ -14,33 +14,29 @@
 }
 
 .Username {
+    display: block;
     margin-left: 650px;
 }
 
 .username {
-    position: absolute;
-    top: 120px;
-    left: 510px;
-    margin-left: 150px;
+    display: block;
+    margin-left: 650px;
 }
 
 .Password {
-    position: absolute;
-    left: 660px;
-    top: 190px;
+    display: block;
+    margin-top: 30px;
+    margin-left: 650px;
 }
 
-.password {
-    position: absolute;
-    top: 220px;
-    left: 510px;
-    margin-left: 150px;
+.Matik {
+    display: block;
+    margin-left: 650px;
 }
 
 .submit{
-    position: absolute;
-    left: 660px;
-    top: 280px;
+    display: block;
+    margin-left: 650px;
 }
 
 .loginborder{
