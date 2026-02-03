@@ -12,6 +12,19 @@ function retrieveAllUser()
     return $stmnt->fetchAll(PDO::FETCH_ASSOC);
 }
 
+function retrieveAllProducts()
+{
+    include "connection.php";
+
+    $sql = "SELECT * FROM products";
+    $stmnt = $conn->prepare($sql);
+    $stmnt->execute();
+
+    return $stmnt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+
+
 function loginAuth($usernames, $passwords)
 {
     include "connection.php";
@@ -39,6 +52,21 @@ function getUser($user_id)
     $stmnt = $conn->prepare($sql);
     $stmnt -> execute([
         "id" => $user_id
+
+    ]);
+
+    return $stmnt->fetchAll(PDO::FETCH_ASSOC);
+
+}
+
+function getProduct($prod_id)
+{
+    include "connection.php";
+
+    $sql = "SELECT * FROM products WHERE prod_id = :id";
+    $stmnt = $conn->prepare($sql);
+    $stmnt -> execute([
+        "id" => $prod_id
 
     ]);
 

@@ -4,6 +4,7 @@
 
 include "../config/include.php";
 $list = retrieveAllUser();
+$lest = retrieveAllProducts();
 
 ?>
 
@@ -27,6 +28,7 @@ include "resources/header.php"
             <th>Username</th>
             <th>Action</th>
         </tr>
+
         <?php
         foreach ($list as $item) {
         ?>
@@ -35,12 +37,35 @@ include "resources/header.php"
                 <td><?= $item["Age"] ?></td>
                 <td><?= $item["Address"] ?></td>
                 <td><?= $item["username"] ?></td>
-                <td><a href="viewPage.php?user_id=<?= $item['user_id']?>">>VIEW</a></td>
+                <td><a href="viewPage.php?user_id=<?= $item['user_id'] ?>">>VIEW</a></td>
             </tr>
 
+        <?php
+        }
+        ?>
+    </table>
+    <table class="leftside">
+        <tr>
+            <th>prod_name</th>
+            <th>prod_quantity</th>
+            <th>prod_type</th>
+            <th>prod_price</th>
+            <th>prod_date_added</th>
+        </tr>
 
         <?php
+        foreach ($lest as $prod) {
+        ?>
+            <tr>
+                <td><?= $prod["prod_name"] ?></td>
+                <td><?= $prod["prod_quantity"] ?></td>
+                <td><?= $prod["prod_type"] ?></td>
+                <td><?= $prod["prod_price"] ?></td>
+                <td><?= $prod["prod_date_added"] ?></td>
+                <td><a href="viewPage.php?prod_id=<?= $prod['prod_id'] ?>">>VIEW</a></td>
+            </tr>
 
+        <?php
         }
         ?>
     </table>

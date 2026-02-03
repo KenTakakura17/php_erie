@@ -72,3 +72,9 @@ td {
     border-radius: 10px;
     margin: 30px;
 }
+
+.leftside{
+   position: absolute;
+   left: 850px;
+   top: 245px;
+}
