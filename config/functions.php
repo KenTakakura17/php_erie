@@ -5,7 +5,7 @@ function retrieveAllUser()
 {
     include "connection.php";
 
-    $sql = "SELECT * FROM user";
+    $sql = "SELECT * FROM users";
     $stmnt = $conn->prepare($sql);
     $stmnt->execute();
 
@@ -29,7 +29,7 @@ function loginAuth($usernames, $passwords)
 {
     include "connection.php";
 
-    $sql = "SELECT * FROM user WHERE username = :username AND password = :password ";
+    $sql = "SELECT * FROM users WHERE username = :username AND password = :password ";
     $stmnt = $conn->prepare($sql);
     $stmnt -> execute([
         "username" => $usernames,
@@ -48,7 +48,22 @@ function getUser($user_id)
 {
     include "connection.php";
 
-    $sql = "SELECT * FROM user WHERE user_id = :id";
+    $sql = "SELECT * FROM users WHERE user_id = :id";
+    $stmnt = $conn->prepare($sql);
+    $stmnt -> execute([
+        "id" => $user_id
+
+    ]);
+
+    return $stmnt->fetchAll(PDO::FETCH_ASSOC);
+
+}
+
+function updateUser($user_id)
+{
+    include "connection.php";
+
+    $sql = "SELECT * FROM users WHERE user_id = :id";
     $stmnt = $conn->prepare($sql);
     $stmnt -> execute([
         "id" => $user_id

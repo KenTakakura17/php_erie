@@ -8,7 +8,7 @@ if (isset($_POST['user_name']) && isset($_POST['user_age']) && isset($_POST['use
     $user_age = $_POST['user_age'];
     $user_address = $_POST['user_address'];
 
-    $sql = "INSERT INTO user (name, age, address)
+    $sql = "INSERT INTO users (name, age, address)
             VALUES (
                 :name,
                 :age,

@@ -23,12 +23,21 @@ if (isset($_GET['prod_id'])) {
 <?php include "resources/navigation.php"; ?>
 
 <?php if ($getUser) { ?>
-    <h2>USER DETAILS</h2>
-    <h1>Name: <?= $getUser[0]['Name'] ?></h1>
-    <h4>Age: <?= $getUser[0]['Age'] ?></h4>
-    <h4>Address: <?= $getUser[0]['Address'] ?></h4>
-    <h4>Username: <?= $getUser[0]['username'] ?></h4>
-    <a href="">EDIT</a>
+
+    <form action="" method="POST">
+        <label for="user_name">Name</label>
+        <input name="user_name" type="text" value="<?= $getUser[0]['Name'] ?>">
+        <label for="user_name">Age</label>
+        <input name="user_name" type="text" value="<?= $getUser[0]['Age'] ?>">
+        <label for="user_name">Address</label>
+        <input name="user_name" type="text" value="<?= $getUser[0]['Address'] ?>">
+        <label for="user_name">username</label>
+        <input name="user_name" type="text" value="<?= $getUser[0]['username'] ?>">
+        <label for="user_name">password</label>
+        <input name="user_name" type="text" value="<?= $getUser[0]['password'] ?>">
+
+        <button>EDIT</button>
+    </form>
 <?php } ?>
 
 <?php if ($getProd) { ?>
