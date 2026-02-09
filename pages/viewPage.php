@@ -24,17 +24,49 @@ if (isset($_GET['prod_id'])) {
 
 <?php if ($getUser) { ?>
 
-    <form action="" method="POST">
+    <form action="functions/updateUser.php" method="POST">
         <label for="user_name">Name</label>
-        <input name="user_name" type="text" value="<?= $getUser[0]['Name'] ?>">
-        <label for="user_name">Age</label>
-        <input name="user_name" type="text" value="<?= $getUser[0]['Age'] ?>">
-        <label for="user_name">Address</label>
-        <input name="user_name" type="text" value="<?= $getUser[0]['Address'] ?>">
-        <label for="user_name">username</label>
-        <input name="user_name" type="text" value="<?= $getUser[0]['username'] ?>">
-        <label for="user_name">password</label>
-        <input name="user_name" type="text" value="<?= $getUser[0]['password'] ?>">
+        <input name="Name" type="text" value="<?= $getUser[0]['Name'] ?>">
+
+        <label for="Age">Age</label>
+        <input name="Age" type="text" value="<?= $getUser[0]['Age'] ?>">
+
+        <label for="Address">Address</label>
+        <input name="Address" type="text" value="<?= $getUser[0]['Address'] ?>">
+        
+        <label for="username">username</label>
+        <input name="username" type="text" value="<?= $getUser[0]['username'] ?>">
+
+        <label for="password">password</label>
+        <input name="password" type="text" value="<?= $getUser[0]['password'] ?>">
+
+
+        <input type="text" name="user_id" value="<?= $getUser[0]['user_id'] ?>" hidden>
+
+        <button>EDIT</button>
+    </form>
+<?php } ?>
+
+<?php if ($getProd) { ?>
+
+    <form action="functions/updateProduct.php" method="POST">
+        <label for="prodname">prodname</label>
+        <input name="prodname" type="text" value="<?= $getProd[0]['prod_name'] ?>">
+
+        <label for="prodquantity">prodquantity</label>
+        <input name="prodquantity" type="text" value="<?= $getProd[0]['prod_quantity'] ?>">
+
+        <label for="prodtype">prodtype</label>
+        <input name="prodtype" type="text" value="<?= $getProd[0]['prod_type'] ?>">
+        
+        <label for="prodprice">prodprice</label>
+        <input name="prodprice" type="text" value="<?= $getProd[0]['prod_price'] ?>">
+
+        <label for="proddateadded">proddateadded</label>
+        <input name="proddateadded" type="text" value="<?= $getProd[0]['prod_date_added'] ?>">
+
+
+        <input type="text" name="prod_id" value="<?= $getProd[0]['prod_id'] ?>" hidden>
 
         <button>EDIT</button>
     </form>

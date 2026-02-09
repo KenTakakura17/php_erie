@@ -59,18 +59,55 @@ function getUser($user_id)
 
 }
 
-function updateUser($user_id)
+function updateUser($userID, $Name, $Age, $Address, $usernames, $passwords)
 {
     include "connection.php";
 
-    $sql = "SELECT * FROM users WHERE user_id = :id";
+    $sql = "UPDATE users SET 
+        Name = :name,
+        Age = :age,
+        Address = :address,
+        username = :username,
+        password = :password
+        WHERE
+        user_id= :user_id";
     $stmnt = $conn->prepare($sql);
     $stmnt -> execute([
-        "id" => $user_id
-
+            "name" => $Name,
+            "age" => $Age,
+            "address" => $Address,
+            "username" => $usernames,
+            "password" => $passwords,
+            "user_id" => $userID
     ]);
 
-    return $stmnt->fetchAll(PDO::FETCH_ASSOC);
+    return $stmnt;
+
+}
+
+function updateProduct($prname, $quantity, $type, $price, $date_added, $prod_ids)
+{
+    include "connection.php";
+
+    $sql = "UPDATE users SET 
+        prod_name = :prod_name,
+        prod_quantity = :prod_quantity,
+        prod_type = :prod_type,
+        prod_price = :prod_price,
+        prod_date_added = :prod_date_added
+        WHERE
+        prod_id= :prod_id";
+    $stmnt = $conn->prepare($sql);
+    $stmnt -> execute([
+            "prod_name" => $prname,
+            "prod_quantity" => $quantity,
+            "prod_type" => $type,
+            "prod_price" => $price,
+            "prod_date_added" => $date_added,
+            "prod_id" => $prod_ids
+    ]);
+
+    return $stmnt;
 
 }
 
