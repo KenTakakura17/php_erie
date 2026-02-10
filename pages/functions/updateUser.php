@@ -21,3 +21,4 @@ if (isset($_POST['user_id'])) {
 } else {
     echo "<script> window.location.href = '../retrievePage.php' </script>'";
 }
+?>

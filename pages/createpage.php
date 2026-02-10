@@ -12,7 +12,7 @@ include "resources/header.php"
     <div class="crtprod">
         <h1>Create User</h1>
         <form action="functions/createUser.php" method="POST">
-            <label for="">Name</label>
+            <label for="" class="Meganame">Name</label>
             <input type="text" name="user_name">
             <label for="">Age</label>
             <input type="number" name="user_age">

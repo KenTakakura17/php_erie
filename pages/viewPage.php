@@ -43,32 +43,32 @@ if (isset($_GET['prod_id'])) {
 
         <input type="text" name="user_id" value="<?= $getUser[0]['user_id'] ?>" hidden>
 
-        <button>EDIT</button>
+        <button>SUBMIT</button>
     </form>
 <?php } ?>
 
 <?php if ($getProd) { ?>
 
     <form action="functions/updateProduct.php" method="POST">
-        <label for="prodname">prodname</label>
-        <input name="prodname" type="text" value="<?= $getProd[0]['prod_name'] ?>">
+        <label for="prod_name">prodname</label>
+        <input name="prod_name" type="text" value="<?= $getProd[0]['prod_name'] ?>">
 
-        <label for="prodquantity">prodquantity</label>
-        <input name="prodquantity" type="text" value="<?= $getProd[0]['prod_quantity'] ?>">
+        <label for="prod_quantity">prodquantity</label>
+        <input name="prod_quantity" type="text" value="<?= $getProd[0]['prod_quantity'] ?>">
 
-        <label for="prodtype">prodtype</label>
-        <input name="prodtype" type="text" value="<?= $getProd[0]['prod_type'] ?>">
+        <label for="prod_type">prodtype</label>
+        <input name="prod_type" type="text" value="<?= $getProd[0]['prod_type'] ?>">
         
-        <label for="prodprice">prodprice</label>
-        <input name="prodprice" type="text" value="<?= $getProd[0]['prod_price'] ?>">
+        <label for="prod_price">prodprice</label>
+        <input name="prod_price" type="text" value="<?= $getProd[0]['prod_price'] ?>">
 
-        <label for="proddateadded">proddateadded</label>
-        <input name="proddateadded" type="text" value="<?= $getProd[0]['prod_date_added'] ?>">
+        <label for="prod_date_added">proddateadded</label>
+        <input name="prod_date_added" type="date" value="<?= $getProd[0]['prod_date_added'] ?>">
 
 
         <input type="text" name="prod_id" value="<?= $getProd[0]['prod_id'] ?>" hidden>
 
-        <button>EDIT</button>
+        <button type="submit">SUBMIT</button>
     </form>
 <?php } ?>
 

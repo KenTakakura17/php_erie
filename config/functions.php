@@ -85,26 +85,26 @@ function updateUser($userID, $Name, $Age, $Address, $usernames, $passwords)
 
 }
 
-function updateProduct($prname, $quantity, $type, $price, $date_added, $prod_ids)
+function updateProduct($prod_name, $prod_quantity, $prod_type, $prod_price, $prod_date_added, $prod_id)
 {
     include "connection.php";
 
-    $sql = "UPDATE users SET 
-        prod_name = :prod_name,
-        prod_quantity = :prod_quantity,
-        prod_type = :prod_type,
-        prod_price = :prod_price,
-        prod_date_added = :prod_date_added
+    $sql = "UPDATE products SET 
+        prod_name = :prodname,
+        prod_quantity = :prodquantity,
+        prod_type = :prodtype,
+        prod_price = :prodprice,
+        prod_date_added = :proddateadded
         WHERE
-        prod_id= :prod_id";
+        prod_id = :prod_id";
     $stmnt = $conn->prepare($sql);
     $stmnt -> execute([
-            "prod_name" => $prname,
-            "prod_quantity" => $quantity,
-            "prod_type" => $type,
-            "prod_price" => $price,
-            "prod_date_added" => $date_added,
-            "prod_id" => $prod_ids
+            "prodname" => $prod_name,
+            "prodquantity" => $prod_quantity,
+            "prodtype" => $prod_type,
+            "prodprice" => $prod_price,
+            "proddateadded" => $prod_date_added,
+            "prod_id" => $prod_id
     ]);
 
     return $stmnt;

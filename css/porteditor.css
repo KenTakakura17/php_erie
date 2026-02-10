@@ -26,20 +26,20 @@
 .dashboard {
     position: absolute;
     top: 70px;
-    margin-left: 700px;
+    margin-left: 800px;
 }
 
 .create {
     position: absolute;
     top: 70px;
-    margin-left: 850px;
+    margin-left: 990px;
     font-size: 25px;
 }
 
 .retrieve {
     position: absolute;
     top: 70px;
-    margin-left: 1000px;
+    margin-left: 1200px;
     font-size: 25px;
 }
 
@@ -69,6 +69,7 @@ td {
 
 .crtprod{
     border: 2px solid black;
+    padding: 20px;
     border-radius: 10px;
     margin: 30px;
 }
