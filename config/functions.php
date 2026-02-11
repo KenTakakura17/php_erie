@@ -125,4 +125,27 @@ function getProduct($prod_id)
     return $stmnt->fetchAll(PDO::FETCH_ASSOC);
 
 }
+
+
+function deleteUser($id){
+    include "connection.php";
+    $sql = "DELETE FROM users WHERE user_id = :id";
+    $stmnt = $conn->prepare($sql);
+    $stmnt -> execute([
+        "id" => $id
+    ]);
+
+    return $stmnt;
+}
+
+function deleteProduct($id){
+    include "connection.php";
+    $sql = "DELETE FROM products WHERE prod_id = :id";
+    $stmnt = $conn->prepare($sql);
+    $stmnt -> execute([
+        "id" => $id
+    ]);
+
+    return $stmnt;
+}
 ?>
